@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .div1{
+  height: 100px;
+  width: 600px;
+  display: flex;
+  flex-wrap: nowrap;
+  margin: auto;
+}
+
+.h1{
+  color: black;
+  margin: 5px
+}
+
+.h2{
+  color: green;
+  margin: 5px
+}
+
+.div2{
+  height: 100px;
+  width: 800px;
+  background: #cccccc;
+  margin: auto;
+  margin-top: -40px;
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+
+.div2_1{
+  height: 70px;
+  width: 140px;
+  background: green;
+  border: solid 1px red;
+  margin: 10px;
+  margin-top: 15px
+}
+
+@media screen and (min-width: 850px) {
+  .h2{
+    color: red;
+  }
+  .div2_1{
+    height: 70px;
+    width: 140px;
+    background: red;
+    border: solid 1px green;
+    margin: 10px;
+    margin-top: 15px
+  }
+}
+
+[class*="col-"] {
+  float: center;
+  padding: 15px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 850px) {
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+@media only screen and (min-width: 850px) {
+    .col-d-1 {width: 8.33%;}
+    .col-d-2 {width: 16.66%;}
+    .col-d-3 {width: 25%;}
+    .col-d-4 {width: 33.33%;}
+    .col-d-5 {width: 41.66%;}
+    .col-d-6 {width: 50%;}
+    .col-d-7 {width: 58.33%;}
+    .col-d-8 {width: 66.66%;}
+    .col-d-9 {width: 75%;}
+    .col-d-10 {width: 83.33%;}
+    .col-d-11 {width: 91.66%;}
+    .col-d-12 {width: 100%;}
+}
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <h1 class="h1">Media Queries</h1>
+      <h1 class="h2">FOR DESKTOP</h1>
+    </div>
+    <div class="div2 col-9 col-d-7">
+      <div class="div2_1 "></div>
+      <div class="div2_1"></div>
+      <div class="div2_1"></div>
+      <div class="div2_1"></div>
+      <div class="div2_1"></div>
+    </div>
+  
+
+</body>
+</html>

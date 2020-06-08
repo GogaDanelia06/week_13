@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        .div1{
+  height: 200px;
+  width: 800px;
+  background: #cccccc;
+  margin: auto;
+}
+
+.div1_1{
+  height: 150px;
+  width: 150px;
+  background: white;
+  border: solid 1px black;
+  margin-left: 20px;
+  animation-name: animate_1;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  position: relative;
+  transition: width 8s, height 8s
+}
+
+ @keyframes animate_1 {
+  from{background: white; left: 0px}
+  to{background: yellow; left: 500px}
+}
+
+.div1_1:hover{
+  height: 50px;
+  width: 50px;
+}
+
+.div2{
+  height: 200px;
+  width: 800px;
+  background: #cccccc;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.div2_1{
+  height: 50px;
+  width: 50px;
+  background: white;
+  border: solid 1px black;
+  animation-name: animate_2;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  position: relative;
+  transition: width 6s, height 6s;
+}
+
+@keyframes animate_2 {
+  from{background: white}
+  to{background: red}
+}
+
+.div2_1:hover{
+  height: 150px;
+  width: 700px;
+}
+    </style>
+  </head>
+  <body>
+    <div class="div1">
+      <div class="div1_1"></div>
+    </div>
+    <div class="div2">
+      <div class="div2_1"></div>
+    </div>
+  
+
+</body>
+</html>
